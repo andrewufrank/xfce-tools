@@ -1,5 +1,5 @@
 # buildx with 
-# docker buildx build -t andrewufrank/xfce-tools:v1 --platform linux/arm/v7,linux/arm64,linux/amd64 --push .
+# docker buildx build -t andrewufrank/xfce-tools:deb10.1 --platform linux/arm/v7,linux/arm64,linux/amd64 --push .
 
 
 # x11docker/xfce
@@ -15,7 +15,7 @@
 # not on armel (armv6) firefox-esr
 
 
-FROM andrewufrank/basics:latest
+FROM andrewufrank/basics:deb10
 
 RUN apt-get update &&  \   
     env DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
