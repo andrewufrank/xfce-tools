@@ -64,22 +64,6 @@ xfce4 xfce4-terminal xfce4-goodies xfce4-whiskermenu-plugin tango-icon-theme gno
 xorg  
 
 
-buster no xfwm4-themes
-nemo brauch 
-
-    gsettings set org.cinnamon.desktop.default-applications.terminal exec 'xfce4-terminal'
-
-braucht inpu! keyboard alt international no dead keys
-
-
-# Dockerfile
-
-```
-FROM andrewufrank/xfce
-RUN apt-get update && \
-    DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-    firefox-esr 
-RUN apt-get install -y midori
 ```
 
 # Command examples: 
